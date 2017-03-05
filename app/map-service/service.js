@@ -3,7 +3,7 @@ import Map from 'esri/map';
 import Graphic from 'esri/graphic';
 
 // NOTE: using Evented mixin to relay map events
-export default Ember.Service.extend({
+export default Ember.Service.extend(Ember.Evented, {
   // create a new map object at an element
   newMap(element, options) {
     // hold on to the reference for later operations
