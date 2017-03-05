@@ -1,0 +1,21 @@
+<div class="container">
+
+  <!-- navbar -->
+  <nav class="navbar navbar-default">
+
+    <ul class="nav navbar-nav">
+      <li>{{#link-to "index" }}Home{{/link-to}}</li>
+      <li>{{#link-to "items" }}Items{{/link-to}}</li>
+    </ul>
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span class="navbar-brand">Ambitious ArcGIS App</span>
+      </div>
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <!-- page content -->
+  {{outlet}}
+
+</div> <!-- /container -->
