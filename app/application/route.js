@@ -2,9 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   beforeModel () {
-    Ember.debug('ApplicationRoute:beforeModel');
-  },
-  beforeModel () {
     return this._initSession();
   },
 
